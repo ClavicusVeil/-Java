@@ -115,8 +115,11 @@ public class Main {
         if (a3 == 9) {
             c = "IX";
         }
+        if (a3 == 0) {
+            throw new RuntimeException("В римской системе счисления нет нуля");
+        }
         return (a + b + c);} catch (IllegalArgumentException e) {
-            throw new IllegalArgumentException("В римской системе нет отрицательных чисел");
+            throw new IllegalArgumentException("В римской системе счисления нет отрицательных чисел");
         }
     }
     public static String calc(String s) {
