@@ -115,7 +115,7 @@ public class Main {
         if (a3 == 9) {
             c = "IX";
         }
-        if (a3 == 0) {
+        if (num == 0) {
             throw new RuntimeException("В римской системе счисления нет нуля");
         }
         return (a + b + c);} catch (IllegalArgumentException e) {
