@@ -42,7 +42,12 @@ public class Main {
                 throw new RuntimeException("Неправильный формат строки");
             }
         }
-        return Integer.toString(a);
+        if (!s.equals(arabicToRoma(a))) {
+            throw new RuntimeException("Неправильный формат числа");
+        }
+        else {
+            return Integer.toString(a);
+        }
     }
     public static String Roma2 (String s) {
         int a = 0; int b, e, d = 0; boolean flag1 = true; boolean flag2 = false; char c = ' ';
